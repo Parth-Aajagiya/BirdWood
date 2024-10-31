@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.main-section {
+    padding: 50px;
+    position: relative;
+    background: #fff;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+h2 {
+    font-size: 2em;
+    color: #222;
+}
+
+p {
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.service-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.service h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.service p {
+    color: #777;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Hover Effects */
+.service:hover {
+    background-color: #969696;
+}
+
+.service:hover h3,
+.service:hover p,
+.service:hover .read-more {
+    color: #fff;
+}
+
+.read-more:hover {
+    color: #333;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial state before animation */
+.service,
+.main-section h5,
+.main-section h2,
+.main-section p {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Animated state */
+.fade-in {
+    opacity: 1;
+    animation: fadeInUp 0.8s ease-out forwards;
+}

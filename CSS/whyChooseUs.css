@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.why-choose-us {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 50px;
+}
+
+.content-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content h5 {
+    color: #f9b632;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .icon {
+    font-size: 32px;
+    color: #f9b632;
+    margin-bottom: 10px;
+}
+
+.stat h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.stat p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

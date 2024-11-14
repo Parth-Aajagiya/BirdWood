@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Added for responsive design -->
+
     <title>contact-us</title>   
     <link href="https://cdn.prod.website-files.com/64144ad550fd80826bd9b3c8/css/inshowjumpers.webflow.3325954cb.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
@@ -645,10 +647,36 @@ src="https://www.facebook.com/tr?id=1505278906964433&ev=PageView&noscript=1"
             </style>
         </div>
         <main class="main-wrapper">  
-            <center> <section class="main-section">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe112E5NqQzb1Dq4u7Ul3j1pnDXOJ8kzXVhHHDp57qvkiibnw/viewform?embedded=true" width="640" height="1094" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                </section></center>
-                <br>
+            <style>
+section {
+  margin: 0;
+  padding: 0;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 1094px; /* Fixed height for the iframe (same as the form's height) */
+  border: 0;
+}
+
+.section-home-booking {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+              </style>
+              <br><br>
+            <section>
+                <div class="iframe-container">
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe112E5NqQzb1Dq4u7Ul3j1pnDXOJ8kzXVhHHDp57qvkiibnw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+              </section>
                 <section class="section-home-booking">
                     <center><div class="contact-card">
                     <h3>Contact Info</h3>
